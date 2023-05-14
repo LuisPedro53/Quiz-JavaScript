@@ -12,30 +12,50 @@
 </head>
 
 <body>
-    <h1 id="main-title">Quizz de programação!</h1>
+
+    <h1 id="main-title">Quiz de programação!</h1>
 
     <div id="score-container" class="hide">
-
-        <script>
-             
-        </script>
-
-        <h2>Parabéns!</h2>
+        <h2 id="mensagem">Parabéns!</h2>
         <p id="display-score"><span>90</span>%</p>
         <p>Você acertou <span id="correct-answers">0</span> de <span id="questions-qty">10</span> perguntas.</p>
         <button id="restart">Refazer quizz!</button>
     </div>
 
     <div id="quizz-container">
+        <div class="relogio">
+            <div>
+                <span id="horas">00</span>
+                <!-- <span class="tempo">Horas</span> -->
+            </div>
+
+            <div>
+                <span id="minutos">00</span>
+                <!-- <span class="tempo">Minutos</span> -->
+            </div>
+
+            <div>
+                <span id="segundos">05</span>
+                <!-- <span class="tempo">Segundos</span> -->
+            </div>
+        </div>
+
+        <div id="time"></div>
         <p id="question"><span id="question-number">1</span> - <span id="question-text">Qual é a unidade de medida para
                 metros?</span></p>
         <div id="answers-box"></div>
     </div>
-    <canvas id="my-canvas"></canvas>
+
+    <div id="perguntas-erradas" class="hide">
+        <div id="wrong-box">
+            <h3>Respostas erradas:</h3>
+            <ul id="wrong-questions-list">
+            </ul>
+          </div>
+    </div>
     <!-- TEMPLATE RESPOSTA -->
     <button class="answer-template hide"><span class="btn-letter"></span> <span class="question-answer"></span></button>
 
-    
 </body>
 
 </html>
