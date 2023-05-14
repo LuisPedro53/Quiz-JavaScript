@@ -261,6 +261,7 @@ restartBtn.addEventListener("click", function () {
   selectedOptions.length = 0;
   wrongQuestionsList.innerHTML = "";
   wrongBox.classList.add("hide");
+  clicks = 0;
 });
 
 // Mostra ou exibe o quizz
